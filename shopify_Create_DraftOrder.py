@@ -14,9 +14,11 @@ shopify.ShopifyResource.set_site(shop_url)
 
 # Create an Order
 order =shopify.Order()
-order.line_items = [{"title": "Custom Tee Test",
+order.line_items = [{
+        "title": "Custom Tee Test",
         "price": "20.00",
-        "quantity": 2}]
+        "quantity": 2
+        }]
 order.save()
 success = order.save()
 
