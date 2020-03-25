@@ -20,7 +20,7 @@ order.line_items = [{"title": "Custom Tee",
 order.save()
 success = order.save()
 
-# Checks whether the order is saved
+# Checks whether the order is saved 
 print(success)
 if order.errors:
    print (order.errors.full_messages())
