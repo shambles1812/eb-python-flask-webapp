@@ -8,13 +8,13 @@ API_VERSION = '2020-01'
 SHOP_NAME = 'developer-test-software'
 
 # Shop Link
-shop_url = "https://%s:%s@%s.myshopify.com/admin/api/%s" % (API_KEY,PASSWORD,SHOP_NAME, API_VERSION)
+shop_url = f"https://{API_KEY}:{PASSWORD}@{SHOP_NAME}.myshopify.com/admin/api/{API_VERSION}"
 shopify.ShopifyResource.set_site(shop_url)
 
 
 # Create an Order
 order =shopify.Order()
-order.line_items = [{"title": "Custom Tee",
+order.line_items = [{"title": "Custom Tee Test",
         "price": "20.00",
         "quantity": 2}]
 order.save()
