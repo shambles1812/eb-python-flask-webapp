@@ -12,8 +12,8 @@ shop_url = "https://%s:%s@%s.myshopify.com/admin/api/%s" % (API_KEY,PASSWORD,SHO
 shopify.ShopifyResource.set_site(shop_url)
 
 
-# Create a Draft Order
-order =shopify.DraftOrder()
+# Create an Order
+order =shopify.Order()
 order.line_items = [{"title": "Custom Tee",
         "price": "20.00",
         "quantity": 2}]
