@@ -19,10 +19,10 @@ order.line_items = [{
         "price": "20.00",
         "quantity": 2
         }]
-order.save()
-success = order.save()
+#order.save()
+#success = order.save()
 
 # Checks whether the order is saved 
-print(success)
+print(shop_url)
 if order.errors:
    print (order.errors.full_messages())
